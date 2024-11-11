@@ -1,0 +1,8 @@
+# Structure and Interpretation of Computer Programs
+
+## 1 Building Abstractions with Procedures
+
+### 1.1 The Elements of Programming
+
+#### 1.1.1 Expressions
+[ ] Start with simple Lisp expressions.
