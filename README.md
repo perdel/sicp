@@ -9,3 +9,6 @@
 
 #### 1.1.2 Naming and the Environment
 - [x] Using definitions
+
+#### 1.1.3 Evaluating Combinations
+- [x] Evaluate subexpressions and apply operator to operands

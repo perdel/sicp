@@ -51,3 +51,12 @@ size
 
 (define circumference (* 2 pi radius))
 circumference
+
+; 1.1.3 Evaluating Combinations
+
+; tree accumulation
+(* (+ 2 (* 4 6))
+   (+ 3 5 7))
+
+; definitions are examples for exceptions to the general evaluation rule - they
+; are special forms
