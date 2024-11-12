@@ -6,3 +6,6 @@
 
 #### 1.1.1 Expressions
 - [x] Start with simple Lisp expressions.
+
+#### 1.1.2 Naming and the Environment
+- [x] Using definitions

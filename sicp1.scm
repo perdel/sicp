@@ -35,3 +35,19 @@
    (+ (- 10 7) 
       6))
 
+; 1.1.2 Naming and the Environment
+
+; associate name size with value 2
+(define size 2)
+
+; refer by name
+size
+
+(* 5 size)
+
+(define pi 3.14159)
+(define radius 10)
+(* pi (* radius radius))
+
+(define circumference (* 2 pi radius))
+circumference
