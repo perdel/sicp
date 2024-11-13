@@ -12,3 +12,6 @@
 
 #### 1.1.3 Evaluating Combinations
 - [x] Evaluate subexpressions and apply operator to operands
+
+#### 1.1.4 Compound Procedures
+- [x] Define procedures
