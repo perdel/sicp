@@ -15,3 +15,7 @@
 
 #### 1.1.4 Compound Procedures
 - [x] Define procedures
+
+#### The Substitution Model for Procedure Application
+- [x] Describe substitution model
+- [x] Distinguish applicative oder from normal order
