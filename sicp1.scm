@@ -153,3 +153,9 @@ evaluated in the order in which it is presented.
          ((< a b) b)
          (else -1))
    (+ a 1)) ; 16
+  
+#| Exercise 1.2
+Translate the following expression into prefix form: (cf. p27)
+|#
+
+(/ (+ 5 4 (- 2 (- 3 (+ 6 (/ 4 5))))) (* 3 (- 6 2) (- 2 7)))
