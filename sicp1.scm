@@ -97,3 +97,27 @@ circumference
 ; reduction
 ; (+ (* 6 6) (* 10 10))
 ; (+ 36 100)
+
+; 1.1.6 Conditional Expressions and Predicates
+(define (abs x)
+  (cond ((> x 0) x)
+        ((= x 0) 0)
+        ((< x 0) (- x))))
+
+; alternative definition with else
+(define (abs x)
+  (cond ((< x 0) (- x))
+        (else x)))
+
+; yet another definition with if
+(define (abs x)
+  (if (< x 0)
+      (- x)
+      x))
+
+; logical compound operations
+; (and (> x 5) (< x 10))
+
+(define (>= x y) (or (> x y) (= x y)))
+
+(define (>= x y) (not (< x y)))

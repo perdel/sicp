@@ -16,6 +16,13 @@
 #### 1.1.4 Compound Procedures
 - [x] Define procedures
 
-#### The Substitution Model for Procedure Application
+#### 1.1.5 The Substitution Model for Procedure Application
 - [x] Describe substitution model
 - [x] Distinguish applicative oder from normal order
+
+#### 1.1.6 Conditional Expressions and Predicates
+- [x] Define conditional expressions
+    - [x] Use predicate case-based predicates
+    - [x] Use `else` clause
+    - [x] Use special form `if`
+- [x] Use logical compound operations
