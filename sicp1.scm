@@ -169,3 +169,19 @@ Translate the following expression into prefix form: (cf. p27)
         (cond ((and (or (< a b) (= a b)) (or (< a c) (= a c))) (sum-of-squares b c))
               ((and (or (< b a) (= b a)) (or (< b c) (= b c))) (sum-of-squares a c))
               (else (sum-of-squares a b))))
+
+#| Exercise 1.4
+Observe that our model of evaluation allows for combinations whose operators are
+compound expres- sions. Use this observation to describe the behavior of the
+following procedure:
+|#
+
+(define (a-plus-abs-b a b)
+  ((if (> b 0) + -) a b))
+
+; The compound if expression determines the operator: + if b is positive and -
+; if b is negative. Based on this choice the absolute value of b is added to a –
+; as the name of the procedure implies.
+
+(a-plus-abs-b 2 3) ; 5
+(a-plus-abs-b 2 -3) ; also 5
