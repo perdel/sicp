@@ -30,6 +30,6 @@
 #### Exercises 1.1 – 1.5
 - [x] Exercise 1.1
 - [x] Exercise 1.2
-- [ ] Exercise 1.3
+- [x] Exercise 1.3
 - [ ] Exercise 1.4
 - [ ] Exercise 1.5

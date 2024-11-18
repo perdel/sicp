@@ -159,3 +159,13 @@ Translate the following expression into prefix form: (cf. p27)
 |#
 
 (/ (+ 5 4 (- 2 (- 3 (+ 6 (/ 4 5))))) (* 3 (- 6 2) (- 2 7)))
+
+#| Exercise 1.3
+ Deﬁne a procedure that takes three numbers as arguments and returns the sum of
+ the squares of the two larger numbers.
+|#
+
+(define (larger-squares a b c)
+        (cond ((and (or (< a b) (= a b)) (or (< a c) (= a c))) (sum-of-squares b c))
+              ((and (or (< b a) (= b a)) (or (< b c) (= b c))) (sum-of-squares a c))
+              (else (sum-of-squares a b))))
