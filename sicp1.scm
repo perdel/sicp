@@ -185,3 +185,22 @@ following procedure:
 
 (a-plus-abs-b 2 3) ; 5
 (a-plus-abs-b 2 -3) ; also 5
+
+#| Exercise 1.5
+Ben Bitdiddle has invented a test to determine whether the interpreter he is
+faced with is using applicative- order evaluation or normal-order evaluation. He
+defines the following two procedures:
+|#
+
+(define (p) (p))
+(define (test x y)
+  (if (= x 0) 0 y))
+
+(test 0 (p))
+; applicative-order evaluation: 
+; (test 0 (p)
+;   (if (= 0 0) 0 (p))) => never returns because (p) needs to be evaluated
+
+; normal-order evaluation:
+; (test 0 (p)
+;   (if (= 0 0) 0 (p))) => 0

@@ -32,4 +32,4 @@
 - [x] Exercise 1.2
 - [x] Exercise 1.3
 - [x] Exercise 1.4
-- [ ] Exercise 1.5
+- [x] Exercise 1.5
