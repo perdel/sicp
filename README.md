@@ -33,3 +33,6 @@
 - [x] Exercise 1.3
 - [x] Exercise 1.4
 - [x] Exercise 1.5
+
+#### 1.1.7 Example: Square Roots by Newton's Method
+- [x] Compute square roots to illustrate procedures
