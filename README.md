@@ -40,4 +40,4 @@
 #### Exercises 1.6 - 1.8
 - [x] Exercise 1.6
 - [x] Exercise 1.7
-- [ ] Exercise 1.8
+- [x] Exercise 1.8
