@@ -255,3 +255,30 @@ new version of if:
 ; The ordinary procedure definition of if, new-if, results in a non-terminating
 ; procedure call. Since both cases are always evaluated sqrt-iter is called over
 ; and over again.
+
+#| Exercise 1.7
+The good-enough? test used in computing square roots will not be very eﬀective
+for ﬁnding the square roots of very small numbers. Also, in real computers,
+arithmetic operations are almost always performed with limited precision.  This
+makes our test inadequate for very large numbers. Explain these statements, with
+examples showing how the test fails for small and large numbers. An alternative
+strategy for implementing good-enough? is to watch how guess changes from one
+iteration to the next and to stop when the change is a very small fraction of
+the guess.  Design a square-root procedure that uses this kind of end test. Does
+this work better for small and large numbers?
+|#
+
+(square (sqrt 1e-10)); fails for small numbers
+(square (sqrt 5e20)); fails for large numbers
+
+(define (sqrt-iter guess x)
+  (let ((better (improve guess x)))
+  (if (better-good-enough? guess better)
+      guess
+      (sqrt-iter better x))))
+
+(define (better-good-enough? new-guess old-guess)
+  (< (abs (- new-guess old-guess)) (* 0.001 new-guess)))
+
+(square (sqrt 1e-10)); works now for small numbers
+(square (sqrt 5e20)); also works for large numbers
