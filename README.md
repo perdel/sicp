@@ -41,3 +41,8 @@
 - [x] Exercise 1.6
 - [x] Exercise 1.7
 - [x] Exercise 1.8
+
+#### 1.1.8 Procedures as Black-Box Abstractions
+- [x] Consider procedural abstractions with `sqrt`
+- [x] Illustrate local names and bound variables
+- [x] Discuss internal definitions and block structures

@@ -308,3 +308,51 @@ cube-root procedures.)
   (+ (/ x (square guess)) (* 2 guess)))
 
 (cube-root 125)
+
+; 1.1.8 Procedures as Black-Box Abstractions
+
+; procedural abstractions
+(define (square x) (* x x))
+(square 2)
+(define (square x) (exp (double (log x))))
+(define (double x) (+ x x))
+(square 2)
+
+; local names 
+(define (square x) (* x x))
+(define (square y) (* y y)) ; not distinguishable
+
+; illustrate bound variables
+(define (good-enough? guess x)
+  (< (abs (- (square guess) x))
+  0.001))
+; guess and x are bound variables
+; <, abs, -, square are free variables
+
+; interal definitions and block structures
+
+; nesting definition, block structure 
+(define (sqrt x)
+  (define (good-enough? guess x)
+    (< (abs (- (square guess) x)) 0.001))
+  (define (improve guess x) (average guess (/ x guess)))
+  (define (sqrt-iter guess x)
+    (if (good-enough? guess x)
+        guess
+        (sqrt-iter (improve guess x) x)))
+  (sqrt-iter 1.0 x))
+
+(sqrt 9)
+
+; make x a free variable -> lexical scoping
+(define (sqrt x)
+  (define (good-enough? guess)
+    (< (abs (- (square guess) x)) 0.001))
+  (define (improve guess) (average guess (/ x guess)))
+  (define (sqrt-iter guess)
+    (if (good-enough? guess)
+        guess
+        (sqrt-iter (improve guess))))
+  (sqrt-iter 1.0))
+
+(sqrt 9)
