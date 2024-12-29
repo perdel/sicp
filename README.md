@@ -46,3 +46,9 @@
 - [x] Consider procedural abstractions with `sqrt`
 - [x] Illustrate local names and bound variables
 - [x] Discuss internal definitions and block structures
+
+### 1.2 Procedures and the Processes They Generate
+
+#### 1.2.1 Linear Recursion and Iteration
+- [x] Implement linear *recursive* process to compute factorial
+- [x] Implement linear *iterative* process to compute factorial

@@ -356,3 +356,27 @@ cube-root procedures.)
   (sqrt-iter 1.0))
 
 (sqrt 9)
+
+; 1.2 Procedures and the Processes They Generate
+
+; 1.2.1 Linear Recursion and Iteration
+
+; linear recursive process for computing 6!
+(define (factorial n)
+  (if (= n 1)
+      1
+      (* n (factorial (- n 1)))))
+
+(factorial 6); 720
+
+; linear iterative process for computing 6!
+(define (factorial n)
+  (fact-iter 1 1 n))
+(define (fact-iter product counter max-count)
+  (if (> counter max-count)
+      product
+      (fact-iter (* counter product)
+                 (+ counter 1)
+                 max-count)))
+
+(factorial 6); 720
