@@ -52,3 +52,7 @@
 #### 1.2.1 Linear Recursion and Iteration
 - [x] Implement linear *recursive* process to compute factorial
 - [x] Implement linear *iterative* process to compute factorial
+
+#### Exercises 1.9 - 1.10
+- [x] Exercise 1.9
+- [ ] Exercise 1.10
