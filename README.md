@@ -55,4 +55,4 @@
 
 #### Exercises 1.9 - 1.10
 - [x] Exercise 1.9
-- [ ] Exercise 1.10
+- [x] Exercise 1.10
