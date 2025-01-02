@@ -56,3 +56,7 @@
 #### Exercises 1.9 - 1.10
 - [x] Exercise 1.9
 - [x] Exercise 1.10
+
+#### 1.2.2 Tree Recursion
+- [x] Introduce *tree recursion* with Fibonacci numbers
+- [ ] Example: Counting change

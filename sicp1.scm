@@ -447,3 +447,26 @@ Give concise mathematical definitions for the functions computed by the
 procedures f, g, and h for positive integer values of n. For example, (k n)
 computes 5n^2.
 |#
+
+; 1.2.2 Tree Recursion
+
+; Compute Fibonacci numbers
+(define (fib n)
+  (cond ((= n 0) 0)
+        ((= n 1) 1)
+        (else (+ (fib (- n 1))
+                 (fib (- n 2))))))
+
+(fib 5) ; 5
+
+; Terrible way of computing Fibonacci numbers because extremely redundant.
+
+; iterative procedure to compute Fibonacci numbers:
+(define (fib-linear n)
+  (fib-iter 1 0 n))
+(define (fib-iter a b count)
+  (if (= count 0)
+    b
+    (fib-iter (+ a b) a (- count 1))))
+
+(fib-linear 6)
