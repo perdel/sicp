@@ -59,4 +59,4 @@
 
 #### 1.2.2 Tree Recursion
 - [x] Introduce *tree recursion* with Fibonacci numbers
-- [ ] Example: Counting change
+- [X] Example: Counting change
